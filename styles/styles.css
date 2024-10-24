@@ -19,18 +19,48 @@ nav ul {
 
 nav ul li {
     margin: 0 1em;
+    
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    
 }
 
+/* Estilo para el menú de navegación */
+.header_menu {
+    list-style-type: none;
+    padding: auto;
+    border-width: auto;
+}
+
+.header_menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Estilo para los enlaces del menú */
+.header_menu li a {
+    text-decoration: none;
+    color:white;
+    transition: border-bottom 0.3s ease-in-out; /* Aquí se define la transición */
+}
+
+/* Estilo para los enlaces en estado hover */
+.header_menu li a:hover {
+    border-bottom: 2px solid white; /* Aquí se define el borde que aparecerá al hacer hover */
+}
+
+
 .banner {
-    text-align: center;
+    text-align: center; 
     padding: 2em 0;
     background-color: #444;
+    margin: 0 auto; 
+    width: 100%; 
 }
+
 
 section {
     padding: 2em;
