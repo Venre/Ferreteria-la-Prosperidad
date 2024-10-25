@@ -1,0 +1,24 @@
+.form-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.registro, .login {
+    padding: 40px 90px;
+    background-color: #f9f9f9;
+}
+
+.registro h2, .login h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.formulario-registro, .formulario-login {
+    max-width: 500px;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
