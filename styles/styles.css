@@ -10,6 +10,17 @@ header {
     padding: 1em 0;
 }
 
+/* Inicialmente ocultamos el ícono estableciendo la opacidad a 0 */
+.fade-in-icon {
+    opacity: 0;
+    transition: opacity 2s ease-in-out; /* Aquí se define la transición */
+}
+
+/* Una vez que el DOM esté cargado, añadimos la clase 'fade-in' que cambia la opacidad a 1 */
+.fade-in {
+    opacity: 1;
+}
+
 nav ul {
     list-style-type: none; 
     padding: 0;
