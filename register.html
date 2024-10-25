@@ -4,44 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
+    <!--Enlace para volver a la página principal-->
+    <header id="link-exit">
+        <ul>
+            <li><a href="index.html">Regresar a la p&aacute;gina Principal</a></li>
+        </ul>
+    </header>
+
+    <div class="banner">
+        <h1>
+            <img src="images/Hola_preview_rev_1.png" alt="Inoco de la Empresa"/>
+        </h1>
+    </div>
+    <!--Seccion de Registro-->
     <h2>Registro</h2>
 
     <form id="formulario-registro">
         <label for="usuario-nombre">Nombre(s):</label>
-        <input type="text" id="usuario-nombre" required></input><br>
+        <input type="text" id="usuario-nombre" required>
 
         <label for="usuario-apellido">Apellido(s):</label>
-        <input type="text" id="usuario-apellido" required></input><br>
+        <input type="text" id="usuario-apellido" required>
 
-        <label for="usuarrio-email">Correo Electronico:</label>
-        <input type="email" id="usuario-emai"></input><br>
+        <label for="usuario-email">Correo Electr&oacute;nico:</label>
+        <input type="email" id="usuario-email" required>
 
-        <label for="pasword">Contraseña</label>
-        <input type="text" id="pasword"></input><br>
+        <label for="constraseña">Contraseña</label>
+        <!--Utilizar input type password hace que no se vean los digitos-->
+        <input type="password" id="contraseñas" required>
 
-        <label for="genero">Genero:</label>
-        <select id="genero">
-            <option value="" disabled></option>
-            <option value="masulino">Masculino</option>
+
+        <label for="genero">G&eacute;nero:</label>
+        <select id="genero" required>
+            <option value="" disabled selected>Seleccione su genero</option>
+            <option value="masculino">Masculino</option>
             <option value="femenino">Femenino</option>
             <option value="otro">Otro</option>
         </select><br>
-        <button value="submit">Registrase</button>
+
+        <button type="submit">Registrarse</button>
     </form>
     
 
     <!--Pie de pagina-->
-    <footer id="pie-de-pagina">
-        <P>Siguenos en nuestras Redes Sociales:</P>
+    <footer class="pie-de-pagina">
+        <p>S&iacute;guenos en nuestras Redes Sociales:</p>
         <ul>
             <li><a href="#">Facebook</a></li>
             <li><a href="#">Instagram</a></li>
             <li><a href="#">Whatsapp</a></li>
         </ul>
     </footer>
+
     <script src="scripts/main.js"></script>
+    
 </body>
 </html>

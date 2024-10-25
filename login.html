@@ -3,34 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesion</title>
-    <link rel="stylesheet" href=""
+    <title>Iniciar Sesi&oacute;n</title>
+    <link rel="stylesheet" href="styles/styles.css"
 </head>
 <body>
-    <h2>Inciar Sesion</h2>
+    <!--Enlace para volver a la pagina Principal-->
+    <header id="link-exit">
+        <nav>
+            <ul>
+                <li><a href="index.html">Regresar a la p&aacute;gina Principal</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <div class="banner">
+        <h1>
+            <img src="images/Hola_preview_rev_1.png" alt="icono de la empresa"/>
+        </h1>
+    </div>
+    <!--Seccion para Inciar Sesion-->
+    <h2>Inciar Sesi&oacute;n</h2>
 
     <form id="formulario">
         <label for="usuario-nombre">Nombres(s):</label>
-        <input type="text" id="usuario-nombre" required></input><br>
+        <input type="text" id="usuario-nombre" required/>
 
         <label for="usuario-apellido">Apellido(s):</label>
-        <input type="text" id="usuario-apellido" required></input><br>
+        <input type="text" id="usuario-apellido" required/>
 
-        <label for="usuario-email">Correo Electronico:</label>
-        <input type="email" id="usuario-email" required></input><br>
+        <label for="usuario-email">Correo Electr&oacute;nico:</label>
+        <input type="email" id="usuario-email" required/>
 
-        <label for="pasword">Contraseña:</label>
-        <input type="text" id="login-pasword" required></input><br>
+        <label for="contraseña">Contraseña:</label>
+        <!--Utilizar input type password hace que no se vean los digitos.
+        No es necesario cerrar el <input type=""</input>
+        Se puede simplemente colocar el <input type="" /> y listo-->
+        <input type="password" id="contraseña" required/>
 
-        <button type="submit">Iniciar Sesion</button>
     </form>
+    <button type="submit">Iniciar Sesión</button>
 
-    <p>¿No tienes una cuenta? <a href="register.html">Registrate aqui</a></p>
-
-    <script src="scripts/main.js"></script>
+    <p>¿No tienes una cuenta? <a href="register.html">Regístrate aqui</a></p>
 
     <!--Pie de pagina-->
-    <footer id="pie-de-pagina">
+    <footer class="pie-de-pagina">
         <P>Siguenos en nuestras Redes Sociales:</P>
         <ul>
             <li><a href="#">Facebook</a></li>
