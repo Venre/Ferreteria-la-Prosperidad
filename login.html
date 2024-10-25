@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesi&oacute;n</title>
-    <link rel="stylesheet" href="styles/styles.css"
+    <link rel="stylesheet" href="styles/main.css"/>
 </head>
 <body>
     <!--Enlace para volver a la pagina Principal-->
-    <header id="link-exit">
-        <nav>
-            <ul>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="header_menu">
                 <li><a href="index.html">Regresar a la p&aacute;gina Principal</a></li>
             </ul>
         </nav> 
@@ -21,34 +21,45 @@
             <img src="images/Hola_preview_rev_1.png" alt="icono de la empresa"/>
         </h1>
     </div>
+
     <!--Seccion para Inciar Sesion-->
+    
+    <section class="login">
     <h2>Inciar Sesi&oacute;n</h2>
+    <form id="formulario-login">
+        <div class="form-group">
+            <label for="usuario-nombre">Nombres(s):</label>
+            <input type="text" id="usuario-nombre" required/>
+        </div>
+        <div class="form-group">
+            <label for="usuario-apellido">Apellido(s):</label>
+            <input type="text" id="usuario-apellido" required/>
+        </div>
 
-    <form id="formulario">
-        <label for="usuario-nombre">Nombres(s):</label>
-        <input type="text" id="usuario-nombre" required/>
-
-        <label for="usuario-apellido">Apellido(s):</label>
-        <input type="text" id="usuario-apellido" required/>
-
-        <label for="usuario-email">Correo Electr&oacute;nico:</label>
-        <input type="email" id="usuario-email" required/>
-
-        <label for="contraseña">Contraseña:</label>
+        <div class="form-group">
+            <label for="usuario-email">Correo Electr&oacute;nico:</label>
+            <input type="email" id="usuario-email" required/>
+        </div>
+        
+        <div class="form-group">
+            <label for="contraseña">Contraseña:</label>
         <!--Utilizar input type password hace que no se vean los digitos.
         No es necesario cerrar el <input type=""</input>
         Se puede simplemente colocar el <input type="" /> y listo-->
-        <input type="password" id="contraseña" required/>
-
+            <input type="password" id="contraseña" required/>
+        
+            <button type="submit">Iniciar Sesión</button>
     </form>
-    <button type="submit">Iniciar Sesión</button>
+    </div>
+    </section>
 
     <p>¿No tienes una cuenta? <a href="register.html">Regístrate aqui</a></p>
 
+
     <!--Pie de pagina-->
     <footer class="pie-de-pagina">
-        <P>Siguenos en nuestras Redes Sociales:</P>
-        <ul>
+        <P class="footer-container">S&iacute;guenos en nuestras Redes Sociales:</P>
+        <ul class="cosito-2">
             <li><a href="#">Facebook</a></li>
             <li><a href="#">Instagram</a></li>
             <li><a href="#">Whatsapp</a></li>
