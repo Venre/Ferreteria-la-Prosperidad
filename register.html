@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
+    <link rel="stylesheet" href="">
 </head>
 <body>
+    <h2>Registro</h2>
+
+    <form id="formulario-registro">
+        <label for="usuario-nombre">Nombre(s):</label>
+        <input type="text" id="usuario-nombre" required></input><br>
+
+        <label for="usuario-apellido">Apellido(s):</label>
+        <input type="text" id="usuario-apellido" required></input><br>
+
+        <label for="usuarrio-email">Correo Electronico:</label>
+        <input type="email" id="usuario-emai"></input><br>
+
+        <label for="pasword">Contraseña</label>
+        <input type="text" id="pasword"></input><br>
+
+        <label for="genero">Genero:</label>
+        <select id="genero">
+            <option value="" disabled></option>
+            <option value="masulino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select><br>
+        <button value="submit">Registrase</button>
+    </form>
     
+
+    <!--Pie de pagina-->
+    <footer id="pie-de-pagina">
+        <P>Siguenos en nuestras Redes Sociales:</P>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Whatsapp</a></li>
+        </ul>
+    </footer>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
