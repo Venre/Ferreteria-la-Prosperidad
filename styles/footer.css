@@ -1,20 +1,2 @@
-.pie-de-pagina {
-    display: flex;
-    background-color: #333;
-    padding: 2vw;
-    text-align: center;
-}
 
-.footer-container {
-    display: flex;
-    justify-content: center;
-    color: white;
-}
-
-.cosito-2  {
-    display: flex;
-    gap: 3em;
-    justify-content: center;
-    list-style: none;
-}
 
