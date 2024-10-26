@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesi&oacute;n</title>
-    <link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <!--Enlace para volver a la pagina Principal-->
@@ -17,9 +17,9 @@
     </header>
 
     <div class="banner">
-        <h1>
-            <img src="images/Hola_preview_rev_1.png" alt="icono de la empresa"/>
-        </h1>
+        <a href="index.html">
+            <img src="images/Hola_preview_rev_1.png" alt="icono de la empresa">
+        </a>
     </div>
 
     <!--Seccion para Inciar Sesion-->
@@ -29,28 +29,27 @@
     <form id="formulario-login">
         <div class="form-group">
             <label for="usuario-nombre">Nombres(s):</label>
-            <input type="text" id="usuario-nombre" required/>
+            <input type="text" id="usuario-nombre" required>
         </div>
         <div class="form-group">
             <label for="usuario-apellido">Apellido(s):</label>
-            <input type="text" id="usuario-apellido" required/>
+            <input type="text" id="usuario-apellido" required>
         </div>
 
         <div class="form-group">
             <label for="usuario-email">Correo Electr&oacute;nico:</label>
-            <input type="email" id="usuario-email" required/>
+            <input type="email" id="usuario-email" required>
         </div>
         
         <div class="form-group">
             <label for="contraseña">Contraseña:</label>
-        <!--Utilizar input type password hace que no se vean los digitos.
-        No es necesario cerrar el <input type=""</input>
-        Se puede simplemente colocar el <input type="" /> y listo-->
-            <input type="password" id="contraseña" required/>
-        
+        <!--Utilizar input type password hace que no se vean los digitos.-->
+            <input type="password" id="contraseña" required>
+
             <button type="submit">Iniciar Sesión</button>
+        </div>
+        
     </form>
-    </div>
     </section>
 
     <p>¿No tienes una cuenta? <a href="register.html">Regístrate aqui</a></p>
