@@ -1,0 +1,27 @@
+.navbar {
+    margin-top: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Hover effect for navbar links */
+.navbar a:hover {
+    background-color: #555;
+    color: #fff;
+}

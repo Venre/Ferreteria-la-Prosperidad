@@ -1,0 +1,26 @@
+.card {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Añade sombra más intensa */
+}
+
+.review-card {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}

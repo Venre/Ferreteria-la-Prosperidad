@@ -1,0 +1,360 @@
+/* Estilos generales para el cuerpo en la página de inicio */
+body.home {
+    font-family: Arial, sans-serif; /* Tipografía clara y moderna */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Color de fondo claro */
+    color: #333; /* Texto oscuro para buena legibilidad */
+}
+
+
+/* Enlaces */
+a {
+    text-decoration: none; /* Quitar subrayado */
+    color: inherit; /* Los enlaces tomarán el color del texto del elemento contenedor */
+}
+
+
+/* Eliminar estilos predeterminados de listas */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Encabezado y barra de navegación */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2C3E50; /* Color oscuro para el encabezado */
+    padding: 20px 0;
+}
+
+
+.banner {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff; /* Blanco para el texto */
+}
+
+
+.navbar {
+    width: 100%;
+    background-color: #333; /* Color oscuro para la barra de navegación */
+    box-sizing: border-box; /* Asegura que el ancho no se desborde por padding/márgenes */
+}
+
+
+.header_menu {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+.header_menu li {
+    margin: 0 15px;
+}
+
+
+.header_menu a {
+    color: white; /* Enlaces blancos */
+    padding: 14px 20px;
+    display: block;
+}
+
+
+.header_menu a:hover {
+    background-color: #575757; /* Fondo gris cuando pasa el cursor */
+}
+
+
+/* Secciones principales */
+main {
+    padding: 20px;
+}
+
+
+h2 {
+    color: #333; /* Color oscuro para títulos */
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+section {
+    margin-bottom: 40px; /* Espacio entre las secciones */
+}
+
+
+#welcome,
+#about,
+#services,
+#reviews h2 {
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+}
+
+
+/* Estilos de las tarjetas */
+.card, .review-card {
+    background-color: white; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    margin: 10px 0; /* Espaciado entre tarjetas */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: all 0.3s ease; /* Transición suave para el efecto */
+}
+
+
+/* Efecto al pasar el cursor */
+.card:hover, .review-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta un 5% */
+}
+
+
+/* Estilos del contenido de la tarjeta */
+.card h3 {
+    color: #2C3E50; /* Título de la tarjeta con color oscuro */
+    margin-top: 0;
+}
+
+
+.card p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* Ajustando tamaño de las tarjetas de reseñas */
+.review-cards-container {
+    display: flex;
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    gap: 20px; /* Espaciado entre las tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en pantallas pequeñas */
+    width: 100%; /* Asegura que el contenedor ocupe todo el espacio disponible */
+}
+
+
+/* Tarjetas de reseñas */
+.review-card {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    padding: 15px; /* Reducir el padding */
+    margin: 8px 0; /* Reducir el margen entre reseñas */
+    width: 30%; /* En pantallas grandes las tarjetas tienen un 30% del ancho */
+    max-width: 300px; /* Limitar el ancho máximo */
+    font-size: 14px; /* Reducir el tamaño de la fuente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Mantener sombra suave */
+}
+
+
+/* Media Queries para hacer la página responsiva */
+
+
+/* Para pantallas grandes, como en escritorios */
+@media (max-width: 1024px) {
+    body.home {
+        font-size: 16px; /* Fuente más pequeña en pantallas grandes */
+    }
+
+
+    /* Ajustar los encabezados */
+    .banner {
+        font-size: 22px;
+    }
+
+
+    /* Ajustar las tarjetas */
+    .review-card {
+        width: 45%; /* Las tarjetas se ponen al 45% en pantallas medianas */
+    }
+
+
+    /* Ajuste para la barra de navegación */
+    .header_menu {
+        flex-direction: column; /* Se apilan los elementos en móviles */
+    }
+
+
+    .header_menu li {
+        margin: 10px 0;
+    }
+}
+
+
+/* Para pantallas más pequeñas como tabletas o laptops más pequeñas */
+@media (max-width: 768px) {
+    body.home {
+        font-size: 14px; /* Fuente más pequeña en pantallas pequeñas */
+    }
+
+
+    /* Ajustar los encabezados */
+    h2 {
+        font-size: 24px; /* Títulos más pequeños */
+    }
+
+
+    /* Ajuste de tarjetas */
+    .review-card {
+        width: 100%; /* Las tarjetas ocupan el 100% del ancho en pantallas pequeñas */
+    }
+
+
+    /* Ajustar márgenes de los contenedores */
+    #welcome, #about, #services, #reviews h2 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+    /* Ajustar el contenido del encabezado */
+    .banner {
+        font-size: 18px;
+    }
+
+
+    /* Barra de navegación en pantallas más pequeñas */
+    .navbar {
+        padding: 10px 0;
+    }
+
+
+    .header_menu {
+        flex-direction: column; /* Los enlaces se apilan */
+        justify-content: center;
+    }
+
+
+    .header_menu li {
+        margin: 5px 0;
+    }
+
+
+    .header_menu a {
+        padding: 10px 15px; /* Espaciado más pequeño */
+    }
+}
+
+
+/* Para pantallas muy pequeñas, como en móviles */
+@media (max-width: 480px) {
+    body.home {
+        font-size: 12px; /* Fuente más pequeña en móviles */
+    }
+
+
+    /* Ajustar los encabezados */
+    h2 {
+        font-size: 20px; /* Títulos más pequeños en móviles */
+    }
+
+
+    /* Ajustar márgenes de las secciones */
+    #welcome, #about, #services, #reviews h2 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+    /* Ajustar el encabezado */
+    .banner {
+        font-size: 16px; /* Font más pequeña */
+    }
+
+
+    /* Ajustar las tarjetas */
+    .review-card {
+        width: 100%; /* Las tarjetas ocupan todo el ancho */
+    }
+}
+
+
+/* Estilos del botón del menú hamburguesa */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 4px;
+    background-color: white;
+}
+
+
+/* Mostrar el botón del menú hamburguesa solo en pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex; /* Mostrar el botón solo en pantallas pequeñas */
+    }
+
+
+    /* Ocultar el menú de navegación por defecto en pantallas pequeñas */
+    .header_menu {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .header_menu li {
+        margin: 10px 0;
+    }
+
+
+    /* Cuando se muestra el menú en pantallas pequeñas */
+    .header_menu.active {
+        display: block;
+    }
+}
+
+
+/* Barra de navegación en pantallas grandes */
+@media (min-width: 769px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .header_menu {
+        display: flex;
+    }
+
+
+    .header_menu li {
+        margin: 0 15px;
+    }
+}
+
+
+/* Pie de página */
+footer {
+    background-color: #333; /* Fondo oscuro en el pie de página */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+footer p {
+    margin: 0;
+}
+
+
+

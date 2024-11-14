@@ -1,0 +1,64 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container .banner a {
+        font-size: 20px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .login {
+        padding: 20px;
+    }
+
+    .form-group input {
+        padding: 8px;
+    }
+
+    button[type="submit"] {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .comentario-formulario p {
+        font-size: 14px;
+    }
+
+    .comentario-formulario a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container .banner a {
+        font-size: 18px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .login {
+        padding: 15px;
+    }
+
+    .form-group input {
+        padding: 6px;
+    }
+
+    button[type="submit"] {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .comentario-formulario p {
+        font-size: 12px;
+    }
+
+    .comentario-formulario a {
+        font-size: 12px;
+    }
+}

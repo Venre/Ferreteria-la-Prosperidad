@@ -1,2 +1,38 @@
+/* Footer styles */
+.pie-de-pagina {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
 
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
+.footer-container p {
+    margin-bottom: 10px;
+}
+
+.footer-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-container li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-container a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    background-color: #555;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+}

@@ -1,92 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ferreter&iacute;a La Properidad</title>
+    <title>Ferretería La Prosperidad</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
-    <!--Pagina de Bienvenida-->
-    <main>
-    <div class="header">
+<body class="home">
+    <!-- Pagina de Bienvenida -->
     <header class="header-container">
+        <div class="banner">
+            <a href="index.html">FERRETERÍA LA PROSPERIDAD</a>
+        </div>
         <nav class="navbar">
-            <ul class="header_menu">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="header_menu" id="menu-list">
                 <li><a href="#welcome">Inicio</a></li>
-                <li><a href="#about">¿Qui&eacute;nes somos?</a></li>
+                <li><a href="#about">¿Quiénes somos?</a></li>
                 <li><a href="#services">Servicios</a></li>
                 <li><a href="#reviews">Reseñas</a></li>
-                <li><a href="login.html">Iniciar Sesion</a></li>
+                <li><a href="login.html">Iniciar Sesi&oacute;n</a></li>
             </ul>
         </nav>
     </header>
-    </div>
 
-    <!--Banner-->
-    <div class="banner">
-        <a href="index.html"> 
-            <img src="images/Hola_preview_rev_1.png" alt="Icono de la Empresa"> 
-        </a>
-    </div>
-    
+    <main>
+        <!-- Sección de Bienvenida -->
+        <section id="welcome">
+            <h2>Bienvenidos a nuestra empresa</h2>
+            <div class="card">
+                <p>En la Ferretería la Prosperidad buscamos crear un espacio seguro con nuestros clientes y fomentar una cultura del buen trato para de esta manera siempre brindar un excelente servicio y una excepcional Atención.</p>
+            </div>
+        </section>
 
-    <!--Seccion de Bienvenida-->
-    <div>
-    <section id="welcome">
-        <h2>Bienvenidos a nuestra empresa</h2>
-        <p>En la Ferreter&iacute;a la Prosperidad buscamos crear un espacio seguro con nuestros clientes y fomentar una cultura del buen trato para siempre brindar un excelente servicio y una excepcional Atencion</p>
-    </section>
-    </div>
-    
-    <div class="Nosotros">
-    <!--Seccion sobre Nosotros-->
-    <section id="about">
-        <h2>Sobre Nosotros</h2>
-        <p>Somos una empresa con mas de 30 años de Trayectoria que a lo largo de ella, hemos apoyando a muchas familias Cartageneras con la venta de productos y materiales necesarios para iniciar sus contrucciones de Vivienda </p>
-    </section>
-    </div>
-    <!--Seccion de Servicios-->
-    <section id="services">
-        <h2>Servicios</h2>
-        <div class="service">
-            <h3>Servicio 1</h3>
-            <p>Caracter&iacute;sticas del Servicio</p>
-            <p>Precio:</p>
-        </div>
-        <div class="service">
-            <h3>Servicio 2</h3>
-            <p>Caracter&iacute;sticas del Servicio</p>
-            <p>Precio: </p>
-        </div>
-    </section>
-    <!--Agregar más Servicios segun sea necesario-->
+        <!-- Sección sobre Nosotros -->
+        <section id="about">
+            <h2>Sobre Nosotros</h2>
+            <div class="card">
+                <p>Somos una empresa con más de 30 años de trayectoria que a lo largo de ella, hemos apoyado a muchas familias Cartageneras con la venta de productos y materiales necesarios para iniciar sus construcciones de vivienda para de esta manera también crecer como empresa y ser reconocida como una empresa de excelente servicio al cliente.</p>
+            </div>
+        </section>
 
-    <!--Seccion de Reseñas-->
-    <section id="reviews">
-        <h2>Reseñas</h2>
-        <div class="review">
-            <p>Excelente Servicio</p>
-            <p>- Cliente 1</p>
-        </div>
-        <div class="review">
-            <p>Espectacular Ambiente y calidad del personal de Trabajo</p>
-            <p>- Cliente 2</p>
-        </div>
-    </section>
-    <!--Agregar mas Reseñas si es Necesario-->
+        <!-- Sección de Servicios -->
+        <section id="services">
+            <h2>Servicios</h2>
+            <div class="card">
+                <h3>Acompañamiento en Ventas</h3>
+                <p>Ofrecemos un acompañamiento completo con lo que usted necesite para la elaboración de su proyecto de vivienda o las herramientas que necesite.</p>
+            </div>
+            <div class="card">
+                <h3>Calidad Asegurada</h3>
+                <p>Todos los elementos que tenemos en ventas son escogidos de una manera minuciosa por nuestro personal para garantizar siempre un buen servicio a nuestros clientes.</p>
+            </div>
+        </section>
+
+        <!-- Sección de Reseñas -->
+        <section id="reviews">
+            <h2>Reseñas</h2>
+            <div class="review-card">
+                <p>Excelente Servicio</p>
+                <p>- Cliente 1</p>
+            </div>
+            <div class="review-card">
+                <p>Espectacular Ambiente y calidad del personal de Trabajo</p>
+                <p>- Cliente 2</p>
+            </div>
+        </section>
     </main>
-    <!--Pie de pagina-->
+
+    <!-- Pie de página -->
     <footer class="pie-de-pagina">
         <div class="footer-container">
-        <P>S&iacute;guenos en nuestras Redes Sociales:</P>
-        <ul class="cosito-2">
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Whatsapp</a></li>
-        </ul>
+            <p>Síguenos en nuestras Redes Sociales:</p>
+            <ul class="cosito-2">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Whatsapp</a></li>
+            </ul>
         </div>
     </footer>
-
+    
+    <script src="scripts/main.js"></script>
 </body>
 </html>
