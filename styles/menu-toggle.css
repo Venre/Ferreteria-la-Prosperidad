@@ -1,0 +1,35 @@
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+}
+
+@media (max-width: 480px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: #444;
+        position: absolute;
+        top: 60px;
+        right: 0%;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
