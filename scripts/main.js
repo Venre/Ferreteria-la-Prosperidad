@@ -23,8 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Registro exitoso. Ahora puedes iniciar sesión.');
             window.location.href = 'login.html'; // Redirige a la página de login
         });
-    } else {
-        console.error('Register form not found');
     }
 
     // Login form
@@ -47,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (userData.password.trim() === password.trim()) {
                     alert('Inicio de sesión exitoso.');
                     window.location.href = 'index.html';
+                    //Redirige a la pagina principal
                 } else {
                     alert('Contraseña incorrecta.');
                 }
@@ -54,7 +53,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 alert('Usuario no encontrado.');
             }
         });
-    } else {
-        console.error('Login form not found');
-    }
+    } 
 });
+
+//Menu de Hamburguesa
+const menuToggle = document.getElementById('mobile-menu');
+const menuList = document.getElementById('menu-list');
+
+menuToggle.addEventListener('click', () => {
+    menuList.classList.toggle('show');
+} )
